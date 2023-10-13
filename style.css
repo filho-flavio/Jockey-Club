@@ -1,4 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabarito&display=swap');
+
 body {
-    background: linear-gradient(0deg, rgb(115, 164, 165) 0%, rgb(121, 146, 158) 100%);
+    background-color: #f0f0f0;
     background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    width: 500px;
+    height: 400px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 50px;
+}
+
+.content {
+    margin: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    max-height: 100%;
+}
+
+.one {
+    width: 375px;
+}
+
+.row {
+    font-family: 'Gabarito', sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+.button-group {
+    margin-top: 30px;
+}
+
+input[type="text"] {
+    width: 200px;
+    height: 25px;
+    border-radius: 10px;
+}
+
+input[type="button"] {
+    width: 120px;
+    height: 35px;
+    border-radius: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    color: #fff;
+    box-shadow: 1px 1px 2px #000;
+}
+
+input[type="button"]:hover {
+    box-shadow: 2px 2px 4px #000;
+}
+
+.button-group #btBet {
+    background: #54b847;
+}
+
+.button-group #btWinner {
+    background: #65a1c9;
+}
+
+.button-group #btNew {
+    background: #bb5252;
+}
+
+#outBets {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 450px;
+    text-align: center;
+    font-size: 14px;
+    max-height: 200px;
 }

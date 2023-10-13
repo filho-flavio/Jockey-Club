@@ -1,4 +1,4 @@
-const HORSES = ["Marujo", "Tordilho", "Belga", "Twister", "Jade", "Lucky"];
+const HORSES = ["Ladybug", "Cisco", "Lacey", "Twister", "Buddy", "Cash"];
 let bets = [];
 
 function addBet() {
@@ -8,7 +8,7 @@ function addBet() {
   let bet = Number(inBet.value);
 
   if (isNaN(horse) || !validateBet(horse) || isNaN(bet) || bet == 0) {
-    alert("Digite um cavalo válido");
+    alert("Enter a valid horse");
     inHorse.focus();
     return;
   }
@@ -45,7 +45,6 @@ const getHorse = (num) => {
 
 function validateBet(tam) {
   let num = HORSES.length;
-
   return tam >= 1 && tam <= num;
 }
 
@@ -101,3 +100,8 @@ function showResult(num, sum, winner, sumWinner) {
   result += "Total amount bet on the winner R$: " + sumWinner;
   document.querySelector("#outBets").textContent = result;
 }
+
+const btNew = document.querySelector("#btNew");
+btNew.addEventListener("click", () => {
+  location.reload();
+});
